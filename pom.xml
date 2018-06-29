@@ -9,7 +9,6 @@
 
     <dependencies>
 
-        <!-- JSF (JavaServer Faces) Implementation-->
         <!-- https://mvnrepository.com/artifact/org.glassfish/javax.faces -->
         <dependency>
             <groupId>org.glassfish</groupId>
@@ -28,7 +27,6 @@
         <profile>
             <id>weld2</id>
             <dependencies>
-                <!-- CDI -->
                 <!-- https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet -->
                 <dependency>
                     <groupId>org.jboss.weld.servlet</groupId>
@@ -42,7 +40,6 @@
         <profile>
             <id>weld3</id>
             <dependencies>
-                <!-- CDI Implementation-->
                 <!-- https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet-shaded -->
                 <dependency>
                     <groupId>org.jboss.weld.servlet</groupId>

@@ -1,13 +1,9 @@
 package de.stga.cditest.service;
 
-import java.io.Serializable;
-
 import de.stga.cditest.annotations.PreAuthorize;
 import de.stga.cditest.model.CurrentParam;
 
-public class CurrentService extends AbstractService<CurrentParam> implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class CurrentService extends AbstractService<CurrentParam> {
 
     @Override
     @PreAuthorize

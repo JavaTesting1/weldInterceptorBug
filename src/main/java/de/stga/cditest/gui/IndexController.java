@@ -1,8 +1,6 @@
 package de.stga.cditest.gui;
 
-import java.io.Serializable;
-
-import javax.faces.view.ViewScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -10,11 +8,9 @@ import de.stga.cditest.model.CurrentParam;
 import de.stga.cditest.service.AbstractService;
 import de.stga.cditest.service.CurrentService;
 
-@ViewScoped
+@RequestScoped
 @Named
-public class IndexController extends AbstractIndexController<CurrentParam> implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class IndexController extends AbstractIndexController<CurrentParam> {
 
     @Inject
     CurrentService currentClass;
