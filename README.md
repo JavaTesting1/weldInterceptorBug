@@ -22,8 +22,8 @@ This project contains a web application which shows that the interception which 
 In order to run the web application deploy the war file on the tomcat and open the following URL in the browser 
 http://HOST:PORT/cditest-servlet/index.xhtml
 
-Then click the do something button. 
+Then click the "Do something" button. 
 In case of the "weld2" profile the following message should appear:
-Successfull. Bean has been intercepted.
+"Successfull. Bean has been intercepted."
 In case of the "weld3" profile the following message should appear:
-AssertionError: Exception Expected. Bean has not been intercepted.
+"AssertionError: Exception Expected. Bean has not been intercepted."
