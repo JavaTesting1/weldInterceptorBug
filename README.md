@@ -20,7 +20,7 @@
 This project contains a web application which shows that the interception which worked with weld2 stops working after upgrading to weld3. Therefore there are two maven profiles "weld2" and "weld3". The "weld2" maven profile is built with weld-servlet 2.4.5.Final. The "weld3" maven profile is built with weld-servlet-shaded 3.0.4.Final.
 
 In order to run the web application deploy the war file on the tomcat and open the following URL in the browser 
-http://<host>:<port>/cditest-servlet/index.xhtml
+http://HOST:PORT/cditest-servlet/index.xhtml
 
 Then click the do something button. 
 In case of the "weld2" profile the following message should appear:
