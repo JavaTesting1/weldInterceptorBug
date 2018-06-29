@@ -5,7 +5,6 @@
     xmlns:ui="http://java.sun.com/jsf/facelets">
 
 
-<f:view encoding="UTF-8" contentType="text/html">
 
     <h:head>
     </h:head>
@@ -17,13 +16,12 @@
         
             <h:commandButton action="#{indexController.doSomething}"
                 value="Do something"></h:commandButton>
-                
+            <h:outputText value="#{indexController.message}"></h:outputText>
         </h:form>
 
     </h:body>
     
     
-</f:view>
 
 
 </html>
