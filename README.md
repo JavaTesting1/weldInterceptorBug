@@ -25,5 +25,6 @@ http://HOST:PORT/cditest-servlet/index.xhtml
 Then click the "Do something" button. 
 In case of the "weld2" profile the following message should appear:
 "Successfull. Bean has been intercepted."
-In case of the "weld3" profile the following message should appear:
+In case of the "weld3" profile the following error message appears:
 "AssertionError: Exception Expected. Bean has not been intercepted."
+It shows this message, because the bean doesnt get intercepted in "weld3".
