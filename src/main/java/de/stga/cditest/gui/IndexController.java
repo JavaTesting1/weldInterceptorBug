@@ -13,11 +13,11 @@ import de.stga.cditest.service.CurrentService;
 public class IndexController extends AbstractIndexController<CurrentParam> {
 
     @Inject
-    CurrentService currentClass;
+    CurrentService currentService;
 
     @Override
-    public AbstractService<CurrentParam> getCurrentClass() {
-        return this.currentClass;
+    public AbstractService<CurrentParam> getCurrentService() {
+        return this.currentService;
     }
 
     @Override

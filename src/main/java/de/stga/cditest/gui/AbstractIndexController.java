@@ -8,10 +8,10 @@ public abstract class AbstractIndexController<S extends SuperParam> {
     public void doSomething() {
         S entity = this.getEntity();
         // INTERCEPTION WORKING IN "weld 2" BUT NOT WORKING in "weld 3"
-        this.getCurrentClass().doSomething(entity);
+        this.getCurrentService().doSomething(entity);
     }
 
-    public abstract AbstractService<S> getCurrentClass();
+    public abstract AbstractService<S> getCurrentService();
 
     public abstract S getEntity();
 
